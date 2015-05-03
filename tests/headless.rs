@@ -7,7 +7,7 @@ mod gl {
 
 #[cfg(feature = "headless")]
 #[test]
-fn main() {
+fn test() {
     let window = glutin::HeadlessRendererBuilder::new(1024, 768).build().unwrap();
 
     unsafe { window.make_current() };
